@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopZone | Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h1>Quick ShopZone</h1>
+
+        <div class="My cart">
+            🛒 My Cart: <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <h2>Discover Your Favorites</h2>
+            <p>Find the products you love at great prices.</p>
+        </section>
+
+        <section class="filters">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search products..."
+            >
+
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Home">Home</option>
+                <option value="Accessories">Accessories</option>
+            </select>
+        </section>
+
+        <p id="results-count"></p>
+
+        <section id="product-list" class="product-grid">
+            <!-- Products will be displayed using JavaScript -->
+        </section>
+
+        <p id="no-products" class="hidden">
+            No products found. Try another search!
+        </p>
+    </main>
+
+    <footer>
+        <p>© 2026 Quick ShopZone | Online Shopping Made Easy</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

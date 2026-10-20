@@ -1,0 +1,142 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background:linear-gradient(135deg, #bbd1f8, #f5a0db);
+  color: #000405;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  padding: 55px 20px 25px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #ee5185;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+header h1 {
+  font-size: clamp(15px, 5vw, 42px);
+  margin: 10px 0;
+}
+
+.description {
+  color: #575e68;
+  margin-bottom: 40px;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 25px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.counter-card {
+  background: rgb(225, 255, 253);
+  color: #575e68;
+  width: 100%;
+  max-width: 360px;
+  padding: 30px 24px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(156, 183, 248, 0.856);
+  border: 2px solid #7ab1fa;
+  
+}
+.counter-container :hover{
+  transform: translateY(-2px);
+  opacity: 0.9;
+  box-shadow: #076ef5;
+}
+
+.counter-card h2 {
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.count-display {
+  font-size: 50px;
+  font-weight: 800;
+  color: #f089ab;
+  margin: 15px 0 25px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  padding: 12px 16px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 1.10;
+}
+
+.increment {
+  background: #02adb9;
+  color: rgb(245, 242, 242);
+}
+
+.decrement {
+  background: #b3b3b3;
+  color: #faf8f8;
+}
+
+.reset {
+  background: #cc1250;
+  color: #f7f9fc;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.initial-text {
+  color: #616b79;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: 45px;
+  color: #575f6b;
+  font-size: 15px;
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 35px 15px 20px;
+  }
+
+  .counter-card {
+    padding: 25px 18px;
+  }
+
+  .count-display {
+    font-size: 60px;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopZone - Product Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">ShopZone.</a>
+
+        <div class="cart">
+            🛒 Cart <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Explore Our Products</h1>
+        <p class="subtitle">Find your everyday essentials.</p>
+
+        <section class="product-grid">
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+                     alt="Wireless headphones">
+                <div class="product-info">
+                    <h2>Wireless Headphones</h2>
+                    <p class="price">₹1,499</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+                     alt="Wrist watch">
+                <div class="product-info">
+                    <h2>Classic Watch</h2>
+                    <p class="price">₹2,299</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+                     alt="Red sports shoes">
+                <div class="product-info">
+                    <h2>Sports Shoes</h2>
+                    <p class="price">₹1,899</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=500"
+                     alt="Modern chair">
+                <div class="product-info">
+                    <h2>Modern Chair</h2>
+                    <p class="price">₹3,499</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500"
+                     alt="Vintage camera">
+                <div class="product-info">
+                    <h2>Vintage Camera</h2>
+                    <p class="price">₹4,999</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500"
+                     alt="Premium headphones">
+                <div class="product-info">
+                    <h2>Premium Headphones</h2>
+                    <p class="price">₹2,799</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <script>
+        const buttons = document.querySelectorAll(".add-btn");
+        const cartCount = document.getElementById("cart-count");
+
+        let count = 0;
+
+        buttons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                count++;
+                cartCount.textContent = count;
+                button.textContent = "Added ✓";
+            });
+        });
+    </script>
+
+</body>
+</html>

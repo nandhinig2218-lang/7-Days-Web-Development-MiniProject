@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Student Marks Calculator</h1>
+        <p>Calculate totals, averages and results</p>
+    </header>
+
+    <main class="container">
+
+        <section class="summary">
+            <h2>Class Performance</h2>
+            <p id="student-count"></p>
+            <p id="top-student"></p>
+        </section>
+
+        <section class="table-section">
+            <h2>Student Results</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Subject 1</th>
+                            <th>Subject 2</th>
+                            <th>Subject 3</th>
+                            <th>Total</th>
+                            <th>Average</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="results-body">
+                        <!-- JavaScript results appear here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
